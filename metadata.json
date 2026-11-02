@@ -1,0 +1,6 @@
+{
+  "name": "PrintGrid Studio v2.0",
+  "description": "Smart multi-size photo collage and 300 DPI print-sheet layout generator with a Zero-Scroll Floating Overlay UI.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

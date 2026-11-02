@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    background-color: #09090b;
+    color: #f4f4f5;
+    touch-action: manipulation;
+  }
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek scrollbars strictly inside floating pop-up cards */
+.popup-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.popup-scroll::-webkit-scrollbar-track {
+  background: rgba(24, 24, 27, 0.4);
+}
+.popup-scroll::-webkit-scrollbar-thumb {
+  background: rgba(82, 82, 91, 0.7);
+  border-radius: 9999px;
+}
+.popup-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(113, 113, 122, 0.9);
+}
